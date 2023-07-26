@@ -2,8 +2,22 @@
 //       Binary Search
 
 #include<stdio.h>
-#define n 10
-int a[n] = {1,3,5,7,9,12,15,18,21,24};
+#define n 50
+int a[n] ;
+int arrayNum()     //     Auto Generated Array
+{
+    int i,m = 1;
+    for(i=0;i<n;i++,m+=2)
+    {
+        a[i] = m;
+
+        printf("%d ",a[i]);
+
+        for(int j=0;j<2;j++){
+            printf("\t");
+        }
+    }
+}
 int binarySearch(int l, int h, int x){
     int mid;
     while(l<=h){
@@ -17,8 +31,9 @@ int binarySearch(int l, int h, int x){
     }return -1;
 }
 int main(){
+    arrayNum();
     int x;
-    printf("Enter Searching Elements : ");
+    printf("\n\nEnter Searching Elements : ");
     scanf("%d",&x);
     int m = binarySearch(0,n-1,x);
     if(m == -1)

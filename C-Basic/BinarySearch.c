@@ -10,9 +10,7 @@ int arrayNum()     //     Auto Generated Array
     for(i=0;i<n;i++,m+=2)
     {
         a[i] = m;
-
         printf("%d ",a[i]);
-
         for(int j=0;j<2;j++){
             printf("\t");
         }

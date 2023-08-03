@@ -60,7 +60,7 @@ int main()
     int ch;
     do
     {
-        printf("\n\t   (Note : Last Insert / Last Delete)");
+        printf("\n\t   (Note : Last Insert / First Delete)");
         printf("\n\t1 -> Insert End");
         printf("\n\t   (Note : Insert Only Last Position)");
         printf("\n\t2 -> Delete First");

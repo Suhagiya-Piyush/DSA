@@ -10,10 +10,10 @@ int Display(){
     if(f<0)
         printf("Queue is Empty...");
     else{
-        while(i<r){
+        do{
             printf("%d  ",a[i]);
             i = (i+1)%n;
-        }printf("%d  ",a[i]);
+        }while(i!=(r+1)%n);
     }
 }
 
@@ -30,6 +30,7 @@ int InsertEnd(){
         printf("Enter Value : ");
         scanf("%d", &val);
         r = (r+1)%n;
+        //printf("\nPosition : %d",r);
         a[r] = val;
     }
 }
